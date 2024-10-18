@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Código</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Análisis de Código</h1>
+        <form method="POST">
+            <div class="form-group">
+                <textarea class="form-control" name="code" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" name="action" value="lexico">Análisis Léxico</button>
+            <button type="submit" class="btn btn-secondary" name="action" value="sintactico">Análisis Sintáctico</button>
+            <button type="submit" class="btn btn-danger" name="action" value="limpiar">Limpiar</button>
+        </form>
+
+        <h3 class="mt-5">Resultados</h3>
+        <div>
+            <h4>Tokens</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Simbolo</th>
+                        <th>Variable</th>
+                        <th>Identificador</th>
+                        <th>Palabra Reservada</th>
+                        <th>Numero</th>
+                        <th>Cadena</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
